@@ -6,27 +6,9 @@
   {{model.body}}
 </p>
 
-{{model.comments}}
 
-<p>
-  {{#each model}}
-  <ul>
-    <li>Model: {{model}}</li>
-    {{#each comment in comments}}
-      <li>{{comment.body}}</li>
-    {{/each}}
-  </ul>
-  {{/each}}
-</p>
-
-<p>
-  <ul>
-  {{#each model.comments as |comment|}}
-  debugger;
-    <li>{{comment.body}}</li>
-  {{/each}}
-  </ul>
-</p>
 
 <button{{action 'deletePost' model}}>Delete this post</button>
 {{outlet}}
+
+{{update-post model=model updatePost='updatePost' }}
