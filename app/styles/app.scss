@@ -1,0 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,800|Alegreya+Sans:400,500,300,700,800);
+
+$header-font: 'Dosis', sans-serif;
+// Colors
+$post-font: 'Alegreya Sans', sans-serif;
+
+// Fonts
+
+body {
+  font-family: $post-font;
+}
+
+#brand {
+  font-family: $header-font;
+  font-weight: 800;
+}
