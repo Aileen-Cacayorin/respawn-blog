@@ -2,11 +2,20 @@
 
   <div id="site-img"></div>
 
-  <div id="posts-container" class="container" >
-    <div class="row text-center">
-      {{#each model as |post-unit|}}
-        {{post-tile post=post-unit}}
-      {{/each}}
+  <div class="index-content">
+    <div id="main-content">
+      <div id="posts-container" class="container" >
+        <div class="row text-center">
+          {{#each model as |post-unit|}}
+            {{post-tile post=post-unit}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div id="aside" class="container-fluid">
+      <a class="twitter-timeline" href="https://twitter.com/Respawn_Blog" data-widget-id="646803763320123392">Tweets by @Respawn_Blog</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
 
   </div>

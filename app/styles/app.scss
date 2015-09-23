@@ -38,12 +38,14 @@ body {
 
 // Image
 #site-img {
-  background: url('http://nycprowler.com/prowler/wp-content/uploads/2013/05/Screen-shot-2013-05-01-at-7.13.35-PM.png') no-repeat center center;
+  background: url('http://nycprowler.com/prowler/wp-content/uploads/2013/05/Screen-shot-2013-05-01-at-7.13.35-PM.png');
+  background-repeat: no-repeat;
+  background-position: 10% 20%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 400px;
+  min-height: 220px;
 }
 
 #posts-container {
@@ -53,3 +55,47 @@ body {
 // li .btn .btn-default {
 //   background-color: red;
 // }
+
+// Structure
+
+#main-content {
+  float: left;
+  width: 60%;
+  text-align: left;
+  margin: 0;
+}
+
+img {
+  max-height: 300px;
+  max-width: 400px;
+}
+
+#aside {
+  margin-top: 75px;
+  float: right;
+  width: 30%;
+  height: 100vh;
+  border-left: 2px solid $black;
+  margin: 0;
+}
+
+
+//
+// <div class="index-content">
+// <div id="main-content">
+// <div id="posts-container" class="container" >
+// <div class="row text-center">
+// {{#each model as |post-unit|}}
+// {{post-tile post=post-unit}}
+// {{/each}}
+// </div>
+// </div>
+// </div>
+//
+// <div id="aside" class="container-fluid">
+// <div>
+// <p>
+// hi
+// </p>
+// </div>
+// </div>

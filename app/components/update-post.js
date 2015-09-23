@@ -4,13 +4,10 @@ export default Ember.Component.extend({
   actions: {
 
     showUpdateForm() {
-
-      // debugger;
       this.set('showUpdateForm', true);
     },
 
     updatePost(model){
-      // debugger;
       var params = {
         title: this.get('title'),
         author: this.get('author'),

@@ -12,8 +12,6 @@ export default Ember.Route.extend({
       this.transitionTo('index')
     },
 
-
-
     updatePost(model, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key] !== undefined) {
@@ -23,6 +21,5 @@ export default Ember.Route.extend({
       model.save();
       this.transitionTo('show-post', model.id);
     }
-
   }
 });
