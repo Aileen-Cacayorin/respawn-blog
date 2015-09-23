@@ -1,7 +1,13 @@
-<ul>
-  {{#each model as |post-unit|}}
-    {{post-tile post=post-unit}}
-  {{/each}}
-</ul>
+<div id="index-wrapper">
 
-{{outlet}}
+  <div id="site-img"></div>
+
+  <div id="posts-container" class="container" >
+    <div class="row text-center">
+      {{#each model as |post-unit|}}
+        {{post-tile post=post-unit}}
+      {{/each}}
+    </div>
+
+  </div>
+</div>

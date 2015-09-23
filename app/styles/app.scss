@@ -1,10 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,800|Alegreya+Sans:400,500,300,700,800);
 
+// Fonts
 $header-font: 'Dosis', sans-serif;
-// Colors
 $post-font: 'Alegreya Sans', sans-serif;
 
-// Fonts
+// Colors
+$white: #fff;
+$black: #000;
+$gray: #ccc;
+
+/*Sizing*/
+$small: 12px;
+$medium: 18px;
+$large: 24px;
+$huge: 36px;
 
 body {
   font-family: $post-font;
@@ -13,4 +22,34 @@ body {
 #brand {
   font-family: $header-font;
   font-weight: 800;
+  font-size: $huge;
+  color: $black;
 }
+
+.nav-li {
+  color: $black !important;
+
+  margin-left: 5px;
+}
+
+.navbar-default {
+  background-color: $white;
+}
+
+// Image
+#site-img {
+  background: url('http://nycprowler.com/prowler/wp-content/uploads/2013/05/Screen-shot-2013-05-01-at-7.13.35-PM.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+}
+
+#posts-container {
+  margin-top: 75px;
+}
+
+// li .btn .btn-default {
+//   background-color: red;
+// }
