@@ -15,29 +15,43 @@ $medium: 18px;
 $large: 24px;
 $huge: 36px;
 
-body {
-  font-family: $post-font;
-}
-
 #brand {
   font-family: $header-font;
   font-weight: 800;
   font-size: $huge;
   color: $black;
+  &:hover {
+    color: darken($white, 20%);
+  }
 }
 
+#twitter-container {
+  margin-right: 50px;
+}
+
+// Navar
 .nav-li {
   color: $black !important;
-
   margin-left: 5px;
+}
+
+.post-title a {
+  color: $black;
+  font-size: $huge;
 }
 
 .navbar-default {
   background-color: $white;
 }
 
-// Image
+.custom-form {
+  width: 50%;
+  border-radius: 5%;
+  background-color: lightyellow;
+}
+
 #site-img {
+  margin-top: -20px;
   background: url('http://nycprowler.com/prowler/wp-content/uploads/2013/05/Screen-shot-2013-05-01-at-7.13.35-PM.png');
   background-repeat: no-repeat;
   background-position: 10% 20%;
@@ -48,21 +62,39 @@ body {
   min-height: 220px;
 }
 
-#posts-container {
-  margin-top: 75px;
+.full-img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 150px;
 }
 
-// li .btn .btn-default {
-//   background-color: red;
+.btn {
+  margin-right: 10px;
+}
+
+// .update-btn {
+//   display: inline;
 // }
 
-// Structure
+#posts-container {
+  margin-top: 75px;
+  margin-left: -100px;
+}
+
+.post-heading {
+  font-size: 48px;
+  font-weight: 800;
+}
 
 #main-content {
   float: left;
-  width: 60%;
-  text-align: left;
+  width: 70%;
   margin: 0;
+  border-right: 1px solid $gray;
 }
 
 img {
@@ -74,28 +106,50 @@ img {
   margin-top: 75px;
   float: right;
   width: 30%;
-  height: 100vh;
-  border-left: 2px solid $black;
+  height: 100%;
   margin: 0;
 }
 
+#twitter-container {
+  margin-top: 100px;
+}
 
-//
-// <div class="index-content">
-// <div id="main-content">
-// <div id="posts-container" class="container" >
-// <div class="row text-center">
-// {{#each model as |post-unit|}}
-// {{post-tile post=post-unit}}
-// {{/each}}
-// </div>
-// </div>
-// </div>
-//
-// <div id="aside" class="container-fluid">
-// <div>
-// <p>
-// hi
-// </p>
-// </div>
-// </div>
+#delete-post-btn {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+body {
+  font-family: $post-font;
+  height: 100%;
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  min-height: 100%;
+}
+
+#footer {
+  margin-top: 50px !important;
+  clear: both;
+
+}
+
+.post-body {
+  font-size: $large;
+}
+
+#about-wrapper {
+  min-height: 500px;
+}
+
+.index-post {
+  margin-bottom: 30px;
+  border: 1px solid grey;
+}
+
+
+// .delete-btn {
+//   background-color: grey;
+// }

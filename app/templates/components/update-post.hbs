@@ -1,44 +1,43 @@
 {{#if showUpdateForm}}
-
 <center>
   <form>
+
     <div class="form-group">
-      <label for="author">Author</label>
-      {{input value=author id="author" placeholder=model.author class='form-contol'}}
+      <label for="author">Author</label><br>
+      {{input value=author id="author" placeholder=model.author class="custom-form"}}
     </div>
 
     <div class="form-group">
-      <label for="date">Date</label>
-      {{input value=date id="date" placeholder=model.date}}
+      <label for="date">Date</label><br>
+      {{input value=date id="date" class="custom-form" placeholder=model.date}}
     </div>
 
     <div class="form-group">
-      <label for="title">Title:</label>
-      {{input value=title id="title" placeholder=model.title}}
+      <label for="title">Title:</label><br>
+      {{input value=title id="title" class="custom-form" placeholder=model.title}}
     </div>
 
     <div class="form-group">
-      <label for="body">Body</label>
-      {{textarea cols='100' rows='20' value=body id="body" placeholder=model.body}}
+      <label for="body">Body</label><br>
+      {{textarea cols='100' rows='20' class="custom-form" value=body id="body" placeholder=model.body}}
     </div>
 
     <div class="form-group">
-      <label for="category">Category</label>
-      {{input value=category id="category" placeholder=model.category}}
+      <label for="category">Category</label><br>
+      {{input value=category id="category" class="custom-form" placeholder=model.category}}
     </div>
 
     <div class="form-group">
-      <label for="image">Image-link:</label>
-      {{input value=image id="image" placeholder=model.image}}
+      <label for="image">Image-link:</label><br>
+      {{input value=image id="image" class="custom-form" placeholder=model.image}}
     </div>
 
     <div class="row text-center">
-      <button {{action 'updatePost' model}}>Update this post</button>
+      <button class="btn btn-primary" {{action 'updatePost' model}}>Update this post</button>
     </div>
   </form>
 </center>
 {{else}}
-  <button {{action 'showUpdateForm'}}>Update this post</button>
-
+  <button class="btn update-btn btn-info" {{action 'showUpdateForm'}}>Update this post</button>
 {{/if}}
 {{yield}}
