@@ -12,24 +12,13 @@
     <p class="lead">By: {{model.author}}</p>
   </div>
 
-  <div id="body" class="container">
+  <div id="body" class="container text-justify">
     <p class="post-body">{{model.body}}</p>
   </div>
 
 
-  <div class="comment-wrapper">
-    <ul>
-      {{#each model.comments as |comment|}}
-      <li>{{comment.body}}</li>
-      {{/each}}
-    </ul>
 
-  </div>
-
-
-  {{new-comment saveComment='saveComment' model=model}}
-
-
+  <!-- update and delete buttons -->
   <div class="row text-center">
     <div class="delete-btn">
       <button class="btn btn-danger" id="delete-post-btn" {{action 'deletePost' model}}>Delete this post</button>
@@ -40,4 +29,29 @@
     </div>
   </div>
 
+  </div>
+
+  <!-- <div class="comment-wrapper">
+    <ul>
+      {{#each model.comments as |comment|}}
+      <li>{{comment.body}}</li>
+      {{/each}}
+    </ul>
+  </div> -->
+  <div class="new-comment-btn row text-center">
+    {{new-comment saveComment='saveComment' model=model}}
+  </div>
+
+
+<div class="container">
+  {{#each model.comments as |comment|}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{comment.author}}</h3>
+    </div>
+    <div class="panel-body">
+      {{comment.body}}
+    </div>
+  </div>
+  {{/each}}
 </div>

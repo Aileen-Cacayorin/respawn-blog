@@ -7,7 +7,6 @@ export default Ember.Route.extend({
     return this.store.findRecord('post', params.post_id);
   },
 
-
   actions: {
     deletePost(model) {
       model.destroyRecord();
@@ -29,7 +28,7 @@ export default Ember.Route.extend({
       newComment.save();
 
       params.post.save();
-      this.transitionTo('index');
+      this.transitionTo('show-post');
 
     }
   }

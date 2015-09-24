@@ -72,14 +72,6 @@ $huge: 36px;
   min-height: 150px;
 }
 
-.btn {
-  margin-right: 10px;
-}
-
-// .update-btn {
-//   display: inline;
-// }
-
 #posts-container {
   margin-top: 75px;
   margin-left: -100px;
@@ -114,11 +106,6 @@ img {
   margin-top: 100px;
 }
 
-#delete-post-btn {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
 body {
   font-family: $post-font;
   height: 100%;
@@ -147,6 +134,11 @@ html, html a {
 .index-post {
   margin-bottom: 30px;
   border: 1px solid grey;
+}
+
+.btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 
