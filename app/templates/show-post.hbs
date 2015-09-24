@@ -16,6 +16,15 @@
     <p class="post-body">{{model.body}}</p>
   </div>
 
+  <div class="comment-list">
+    <ul>
+     {{#each model.comments as |comment|}}
+      <li>{{comment.body}}</li>
+     {{/each}}
+    </ul>
+
+  </div>
+
 
   <div class="row text-center">
     <div class="delete-btn">
@@ -27,4 +36,10 @@
     </div>
   </div>
 
+</div>
+<br><br>
+
+<div class="container">
+
+<center>{{add-comment addComment="addComment"}}</center>
 </div>
