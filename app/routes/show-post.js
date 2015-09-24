@@ -22,6 +22,15 @@ export default Ember.Route.extend({
       });
       model.save();
       this.transitionTo('show-post', model.id);
+    },
+
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      newComment.save();
+
+      params.post.save();
+      this.transitionTo('index');
+
     }
   }
 });

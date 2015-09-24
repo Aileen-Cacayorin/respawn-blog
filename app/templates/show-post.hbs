@@ -16,14 +16,18 @@
     <p class="post-body">{{model.body}}</p>
   </div>
 
-  <div class="comment-list">
+
+  <div class="comment-wrapper">
     <ul>
-     {{#each model.comments as |comment|}}
+      {{#each model.comments as |comment|}}
       <li>{{comment.body}}</li>
-     {{/each}}
+      {{/each}}
     </ul>
 
   </div>
+
+
+  {{new-comment saveComment='saveComment' model=model}}
 
 
   <div class="row text-center">
@@ -36,10 +40,4 @@
     </div>
   </div>
 
-</div>
-<br><br>
-
-<div class="container">
-
-<center>{{add-comment addComment="addComment"}}</center>
 </div>
