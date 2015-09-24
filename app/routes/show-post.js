@@ -4,15 +4,10 @@ export default Ember.Route.extend({
   showUpdateForm: false,
 
   model(params) {
-
-    var currentPost = this.store.findRecord('post', params_id);
-    var comments = post.get('commments')
-
-    return data {
-      post: currentPost,
-      comments: comments
-    };
+    return this.store.findRecord('post', params.post_id);
   },
+
+
   actions: {
     deletePost(model) {
       model.destroyRecord();
@@ -27,14 +22,6 @@ export default Ember.Route.extend({
       });
       model.save();
       this.transitionTo('show-post', model.id);
-    },
-
-    addComment(params) {
-      var newComment = this.store.createRecord('comment', params);
-      newComment.save();
-      params.post.save();
-      this.transitionTo('index')
     }
-
   }
 });
