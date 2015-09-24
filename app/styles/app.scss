@@ -1,9 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,800|Alegreya+Sans:400,500,300,700,800);
 
-// body {
-//   max-width: 1200px;
-//   margin: 0 auto !important;
-// }
 // Fonts
 $header-font: 'Dosis', sans-serif;
 $post-font: 'Alegreya Sans', sans-serif;
@@ -77,10 +73,10 @@ $huge: 36px;
 
 #posts-container {
   margin-top: 75px;
-  width: 70%;
-  float: left;
-  border-right: 1px solid $gray;
-  padding: 10px;
+  // width: 70%;
+  // float: left;
+  // border-right: 1px solid $gray;
+  // padding: 10px;
 }
 
 .post-heading {
@@ -94,16 +90,17 @@ img {
   max-width: 400px;
 }
 
-#aside {
-  margin-top: 75px;
-  float: right;
-  width: 30%;
-  height: 100%;
-  margin: 0;
-}
+// #aside {
+//   margin-top: 75px;
+//   // float: right;
+//   // width: 30%;
+//   // height: 100%;
+//   // margin: 0 auto;
+// }
 
 #twitter-container {
   margin-top: 100px;
+
 }
 
 body {
@@ -154,147 +151,27 @@ html, html a {
 
 
 
-/* Custom, iPhone Retina */
-  @media only screen and (max-width : 320px) {
-    .post-title a {
-      font-size: $small !important;
-    }
-    #aside {
-      display: none;
-      float: none;
-    }
-    #main-content {
-      float: none;
-      width: 100%;
-      border-right: none !important;
-      display: block;
-    }
-
-    .title-image {
-      max-height: 200px;
-      max-width: 100%;
-      text-align:center;
-      margin: 0 auto;
-    }
-
-    .index-single-post {
-      // border-bottom: 1px solid grey;
-      margin-bottom: 20px;
-
-    }
-    * {
-      margin: 0 auto !important;
-    }
-
-    .index-post {
-      margin: 0, auto;
-      width: 100%;
-    }
-
-    .post-title a {
-      font-size: $small;
-    }
-  }
-
-  /* Small Devices, Tablets */
-  @media only screen and (max-width : 768px) {
-    .post-title a {
-      font-size: $medium;
-    }
-
-    #main-content {
-      border: none;
-      display: block;
-    }
-    body {
-      text-align: left !important;
-      margin: auto !important;
-    }
-
-    .title-image {
-      max-height: 200px;
-      max-width: 100%;
-      text-align:left;
-    }
-    .index-single-post {
-      border-bottom: none;
-    }
-  }
-
-  @media only screen and (max-width : 800px) {
-    .post-title a {
-      font-size: $medium;
-    }
-    #aside {
-
-    }
-    #main-content {
-      border: none;
-      display: block;
-    }
-    body {
-      text-align: left !important;
-      margin: auto !important;
-    }
-
-    .title-image {
-      max-height: 200px;
-      max-width: 100%;
-      // text-align:left;
-    }
-    .index-single-post {
-      border-bottom: none;
-    }
-  }
-
-
-  // /* Medium Devices, Desktops */
-  // @media only screen and (max-width : 992px) {
-  //   .post-title a {
-  //     font-size: $medium;
-  //   }
-  //   .index-single-post {
-  //     border-bottom: none;
-  //   }
-  //   * {
-  //     margin: 0 auto !important;
-  //
-  //   }
-  //
-  //   .index-post {
-  //     max-width: 70%;
-  //     float:left;
-  //   }
-  //
-  // }
-  //
-  // /* Large Devices, Wide Screens */
-  // @media only screen and (max-width : 1200px) {
-  //   .post-title a {
-  //     font-size: $large;
-  //   }
-  //   .index-single-post {
-  //     border: none;
-  //   }
-  //
-  //
-  //
-  // }
-  //
-  // @media only screen and (max-width : 1500px) {
-  //   .post-title a {
-  //     font-size: $large;
-  //   }
-  //   .index-single-post {
-  //     border: none;
-  //   }
-  //
-  //   #main-content {
-  //     float: left;
-  //     width: 70%;
-  //     margin: 0;
-  //     border-right: 1px solid $gray;
-  //   }
-  //
-  //
-  // }
+// /* Custom, iPhone Retina */
+//   @media only screen and (max-width : 320px) {
+//     .post-title a {
+//       font-size: $small;
+//     }
+//     #aside {
+//       display: block;
+//       float: none;
+//     }
+//     #posts-container {
+//       float: none;
+//       width: 100%;
+//       border-right: none !important;
+//       display: block;
+//
+//     }
+//
+//     .title-image {
+//       max-height: 200px;
+//       max-width: 100%;
+//       text-align:center;
+//       margin: 0 auto;
+//     }
+//   }
