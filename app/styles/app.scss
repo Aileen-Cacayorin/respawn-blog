@@ -133,7 +133,6 @@ html, html a {
 
 .index-post {
   margin-bottom: 30px;
-  border: 1px solid grey;
 }
 
 .btn {
@@ -141,7 +140,16 @@ html, html a {
   margin-bottom: 20px;
 }
 
+.index-single-post {
+  border-bottom: 1px solid grey;
+}
 
-// .delete-btn {
-//   background-color: grey;
-// }
+.comment-form {
+  width: 30%;
+}
+
+.panel {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+}

@@ -6,12 +6,13 @@ export default Ember.Component.extend({
     save() {
       var params = {
         author: this.get('author'),
-        date: this.get('date'),
+        date: new Date(),
         body: this.get('body'),
         category: this.get('category'),
         image: this.get('image'),
         title: this.get('title')
       };
+      debugger;
       this.sendAction('save', params);
     }
   }

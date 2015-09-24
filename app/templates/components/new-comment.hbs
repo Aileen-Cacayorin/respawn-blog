@@ -1,25 +1,25 @@
 {{#if addNewComment}}
   <h1>New Comment</h1>
-    <div>
+    <center><div class="comment-form">
       <form>
         <div class="form-group">
-          <label for="owner">Author</label>
-          {{input value=author id="author"}}
+          <label for="author">Author:</label>
+          {{input value=author id="author" class="custom-form"}}
         </div>
 
         <div class="form-group">
-          <label for="type">Date</label>
-          {{input value=date id="date"}}
+          <label for="type">Date:</label>
+          {{input value=date id="date" class="custom-form"}}
         </div>
 
         <div class="form-group">
-          <label for="body">Body</label>
-          {{input value=body id="body"}}
+          <label for="body">Body:</label>
+          {{input value=body id="body" class="custom-form"}}
         </div>
 
         <button {{action 'saveComment'}}>Save</button>
       </form>
-    </div>
+    </div></center>
 {{else}}
     <button class="btn btn-default" {{action 'commentFormShow'}}>New Comment</button>
 {{/if}}
