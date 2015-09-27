@@ -8,6 +8,7 @@ export default Ember.Component.extend({
     },
     saveComment() {
       var params = {
+        // debugger;
         author: this.get('author'),
         post: this.get('model'),
         date: this.get('date'),

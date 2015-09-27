@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         image: this.get('image'),
         title: this.get('title')
       };
-      debugger;
+      // debugger;
       this.sendAction('save', params);
     }
   }
